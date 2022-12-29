@@ -17,8 +17,8 @@ export { default as json5 } from 'https://esm.sh/json5@2.2.1'
 export { debounce } from 'https://deno.land/std@0.156.0/async/debounce.ts'
 import { default as dashPackageJson } from 'https://raw.githubusercontent.com/bridge-core/dash-compiler/main/package.json' assert { type: 'json' }
 
-import * as mod from "https://deno.land/std@0.170.0/collections/mod.ts";
-export { deepMerge, _utils } from 'https://deno.land/std@0.170.0/collections/mod.ts'
+export * as mod from "https://deno.land/std@0.170.0/collections/mod.ts";
+export { deepMerge } from 'https://deno.land/std@0.170.0/collections/mod.ts'
 
 let swcVersion = dashPackageJson.dependencies['@swc/wasm-web']
 if (swcVersion.startsWith('^')) swcVersion = swcVersion.slice(1)
