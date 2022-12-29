@@ -1,5 +1,6 @@
 export * as flags from 'https://deno.land/std@0.121.0/flags/mod.ts'
 export * as path from 'https://deno.land/std@0.121.0/path/mod.ts'
+export * as collections from 'https://deno.land/std@0.136.0/collections/mod.ts'
 export {
 	FileType,
 	PackType,
