@@ -1,6 +1,5 @@
 export * as flags from 'https://deno.land/std@0.121.0/flags/mod.ts'
 export * as path from 'https://deno.land/std@0.121.0/path/mod.ts'
-export * as collections from 'https://deno.land/std@0.136.0/collections/mod.ts'
 export {
 	FileType,
 	PackType,
@@ -17,6 +16,8 @@ export {
 export { default as json5 } from 'https://esm.sh/json5@2.2.1'
 export { debounce } from 'https://deno.land/std@0.156.0/async/debounce.ts'
 import { default as dashPackageJson } from 'https://raw.githubusercontent.com/bridge-core/dash-compiler/main/package.json' assert { type: 'json' }
+
+import * as mod from "https://deno.land/std@0.136.0/collections/mod.ts";
 export { deepMerge } from 'https://deno.land/std@0.136.0/collections/deep_merge.ts'
 
 let swcVersion = dashPackageJson.dependencies['@swc/wasm-web']
